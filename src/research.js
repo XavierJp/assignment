@@ -15,6 +15,9 @@ const helper = algoliasearchHelper(client, indexName, {
     facets: FACETS
 });
 
+/**
+*   Manage search
+**/
 
 class Search extends Component {
     constructor(props) {

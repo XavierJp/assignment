@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+/**
+*   Display algolia API results
+**/
+
 const Results = (props) => {
     return (
       <div className="results">

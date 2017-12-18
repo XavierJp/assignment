@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
+/**
+*   List of used facets
+**/
+
 export const FACETS = ['food_type', 'payment_options', 'price', 'stars_count'];
+
+/**
+*   Display the facets to filter resuts
+**/
 
 export class FacetSelector extends Component {
     constructor(props) {
