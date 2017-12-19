@@ -1,0 +1,10 @@
+.star {
+    width:15px;
+    height:15px;
+    background-image: url('../static/star-empty.png');
+    background-size: 15px;
+}
+
+.star-plain {
+    background-image: url('../static/stars-plain.png');
+}

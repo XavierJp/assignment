@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import algoliasearch from 'algoliasearch';
 import algoliasearchHelper from 'algoliasearch-helper';
 
-import {FACETS, FacetSelector } from './facetSelector';
+import FacetSelector, { FACETS } from './facetSelector';
 import Results from './results';
+import InputBar from './inputBar';
 
 const applicationID = 'QF683ZB3A2';
 const apiKey = 'c03ec07c2f8e419d91f4d5e7281765c7';
@@ -22,13 +23,13 @@ const helper = algoliasearchHelper(client, indexName, {
 class Search extends Component {
     constructor(props) {
         super(props);
-        this.state = {res: [], facets:[]};
+        this.state = {res: false, facets:[], apiResponse:{}};
 
         helper.on('result', (content) => {
-            console.log(content.getFacetValues("food_type"))
             this.setState({
                 facets:FACETS.map(el=>content.getFacetValues(el)),
-                res:content.hits
+                res:content.hits && content.hits.length > 0,
+                apiResponse : content
             });
         });
 
@@ -46,18 +47,27 @@ class Search extends Component {
 
     render() {
         return (
-          <div className="app">
-            <input
-                type="text"
-                ref={(input) => { this.textInput = input; }}
-                autoComplete="off"
-                id="search-box"
-                defaultValue="Search for restaurants by Name, Cuisine, Location"/>
-            <FacetSelector facetList={this.state.facets} helper={helper}/>
-            <Results results={this.state.res}/>
+          <div id="search-area">
+            <InputBar helper={helper} />
+            { this.state.res &&
+                <div id="display-area">
+                    <FacetSelector facetList={this.state.facets} helper={helper}/>
+                    <Results results={this.state.apiResponse}/>
+                </div>
+            }
+            { !this.state.res &&
+                <Empty/>
+            }
           </div>
         );
     }
 }
+
+const Empty = () => {
+    return(
+        <div id="no-results" className="italic">No results</div>
+    )
+}
+
 
 export default Search;

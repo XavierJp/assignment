@@ -1,0 +1,26 @@
+#facet-container {
+    width:35%;
+    height:500px;
+    overflow-y:scroll;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    border-right:1px solid #ccc;
+    padding : 20px;
+}
+
+.facet-label {
+    padding: 15px 0px 15px 0px;
+}
+
+.facet-item {
+    padding:2px 5px;
+    margin: 2px 0px;
+    border-radius:2px;
+    font-size: 0.9em;
+    cursor:pointer;
+}
+.facet-refined {
+    background-color: #458edc;
+    color:#fff;
+
+}

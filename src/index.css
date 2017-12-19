@@ -1,5 +1,100 @@
+html, body {
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#555;
+  background: url('./static/background.png');
+  font-size: 1em;
+}
+
+#root {
+    width:100%;
+}
+
+#content-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-area {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px #ccc;
+}
+#display-area {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color:#fefefe;
+}
+
+#no-results {
+    background-color: #fefefe;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/** generic classes **/
+.bold {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font-dark-gray {
+    color:#666;
+}
+
+.font-light-gray {
+    color:#ccc;
+}
+
+.font-gray {
+    color:#999;
+}
+
+.font-white {
+    color:#fff;
+}
+
+
+.float-right {
+    float:right;
+}
+
+.float-left {
+    float:left;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex-rows {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

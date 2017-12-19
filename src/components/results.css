@@ -1,0 +1,20 @@
+#results-container {
+    width:80%;
+}
+
+.result-item {
+    padding: 10px 20px;
+}
+
+.restaurant-picture {
+    width:120px;
+    height:120px;
+    background-color: #fefefe;
+    margin:10px;
+    border:1px solid #ddd;
+    border-radius: 3px;
+}
+
+.restaurant-description {
+    width: 90%;
+}
