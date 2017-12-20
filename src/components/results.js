@@ -40,7 +40,7 @@ class Results extends Component {
 const ResultItem = (props) => {
     return (
         <div className="result-item flex-columns">
-            <img className="restaurant-picture" src={props.hit.image_url} alt="NO PICTURE AVAILABLE"/>
+            <img className="restaurant-picture" src={props.hit.image_url} alt="no data"/>
             <div className="restaurant-description">
                 <div className="font-black bold">
                     { props.hit.name }

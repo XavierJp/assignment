@@ -19,8 +19,23 @@
     font-size: 0.9em;
     cursor:pointer;
 }
+
+.facet-counter {
+    color:#ccc;
+}
+
+.facet-item:hover {
+    background-color: #2897C5;
+    color:#fff;
+}
+.facet-item:hover > .facet-counter {
+    color:#fff;
+}
+
 .facet-refined {
     background-color: #2897C5;
     color:#fff;
-
+}
+.facet-refined > .facet-counter {
+    color:#fff;
 }

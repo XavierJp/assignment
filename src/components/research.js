@@ -12,9 +12,19 @@ const apiKey = 'c03ec07c2f8e419d91f4d5e7281765c7';
 const indexName = 'algolia_assignment';
 
 const client = algoliasearch(applicationID, apiKey);
-const helper = algoliasearchHelper(client, indexName, {
+
+const clientParams = {
     facets: FACETS
-});
+};
+
+let helper = algoliasearchHelper(client, indexName, clientParams);
+
+if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition((position) => {
+        clientParams.aroundLatLng = `${position.coords.latitude},${position.coords.longitude}`;
+        helper = algoliasearchHelper(client, indexName, clientParams);
+    });
+}
 
 /**
 *   Manage search

@@ -86,14 +86,14 @@ const FacetItem = (props) => {
             className={ (props.data.isRefined ? 'facet-refined font-white' : '')+' facet-item' }
             onClick={()=>props.onFacetSelected(props.data.name)}>
             { props.facetType !== 'stars_count' &&
-                <span>{props.data.name}</span>
+                    <span>{props.data.name}</span>
+            }
+            { props.facetType !== 'stars_count' &&
+                    <span className='float-right facet-counter'>{props.data.count}</span>
             }
             { props.facetType === 'stars_count' &&
                 <Stars score={props.data.name} />
             }
-                <span
-                    className={ (props.data.isRefined ? 'font-white' : '')+' float-right font-light-gray' }
-                >{props.data.count}</span>
         </div>
         );
 };
