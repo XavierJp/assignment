@@ -24,11 +24,11 @@ An index is a collection of items on which you can perform queries, and obtain s
 
 A record is an item that you can retreive, using Algolia search angine. Each record has attributes (defined with JSON), which can be used for searching, filtering, displaying, ranking.
 
-So the concept of indexing consists in turning your own data into an algolia index, composed of records, with searchable/filterable attributes.
+So the concept of indexing consists in turning your own data into an Algolia index, composed of records, with searchable/filterable attributes, on which you will search results.
 
 The best type of metrics to include in a custom ranking depends on your business. For instance a restaurant search experience would value restaurants with the best reviews, over a strict textual relevance.
 
-For more informations you can have a look at the Algolia documentation's definitions. If you do not understand a concept, or you want to discuss about the best custom ranking metrics to choose, do not hesitate to come back to me and eventually schedule a call.
+For more informations you can have a look at the Algolia documentation's definitions. If you do not understand a concept, or you want to discuss about the best custom ranking metrics to choose, do not hesitate to come back to me and eventually we can schedule a call.
 
 Here are the documentation links on these topics :
 Indexes & records : https://www.algolia.com/doc/guides/getting-started/what-is-algolia/?language=php#indices
@@ -52,7 +52,7 @@ Regards, Matt
 
 ### answer
 
-Hello George,
+Hello Matt,
 
 I am Xavier from the Solutions Engineering team. I am indeed really sorry to hear that but here at Algolia we highly value customer feedback. I will immediately notify the UX team in charge of the dashboard.
 
@@ -63,7 +63,7 @@ Here is a link to the Algolia documentation :
 clear index : https://www.algolia.com/doc/api-reference/api-methods/clear-index/
 delete index : https://www.algolia.com/doc/api-reference/api-methods/delete-index/
 
-I am positive that we can improve your index management experience,
+I am optimistic that we can improve your index management experience,
 
 Regards,
 
