@@ -2,7 +2,7 @@
 
 
 ## Question 1:
-```
+
 Hello,
 
 I'm new to search engines, and there are a lot of concepts I'm not educated on. To make my onboarding smoother, it'd help if you could provide me with some definitions of the following concepts:
@@ -12,10 +12,10 @@ Indexing
 I'm also struggling with understanding what types of metrics would be useful to include in the "Custom Ranking."
 
 Cheers, George
-```
+
 
 ### answer
-```
+
 Hello George,
 
 I am Xavier from the Solutions Engineering team. Here is a short explaination of the concepts :
@@ -40,21 +40,18 @@ Regards,
 
 Xavier
 
-```
-
 
 ## Question 2:
 
-```
 Hello,
 
 Sorry to give you the kind of feedback that I know you do not want to hear, but I really hate the new dashboard design. Clearing and deleting indexes are now several clicks away. I am needing to use these features while iterating, so this is inconvenient.
 
 Regards, Matt
-```
+
 
 ### answer
-```
+
 Hello George,
 
 I am Xavier from the Solutions Engineering team. I am indeed really sorry to hear that but here at Algolia we highly value customer feedback. I will immediately notify the UX team in charge of the dashboard.
@@ -71,20 +68,18 @@ I am positive that we can improve your index management experience,
 Regards,
 
 Xavier
-```
+
 
 ## Question 3:
 
-```
 Hi,
 
 I'm looking to integrate Algolia in my website. Will this be a lot of development work for me? What's the high level process look like?
 
 Regards, Leo
-```
 
 ### answer
-```
+
 Hi Leo,
 
 I am Xavier from the Solutions Engineering team. I am glad to hear that you consider joining us !
@@ -107,5 +102,5 @@ Do not hesitate to come back to me with your questions, and we can schedule a ca
 Regards,
 
 Xavier
-```
+
 
