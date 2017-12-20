@@ -1,6 +1,9 @@
 import React from 'react';
 import './inputBar.css';
 
+/*
+* Search input bar
+*/
 const InputBar = (props) => {
     return(
         <div id="input-bar-container">

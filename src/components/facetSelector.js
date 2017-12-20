@@ -4,7 +4,7 @@ import Stars from './stars';
 
 
 /**
-*   List of used facets
+*   List of queried facets and their corresponding label
 **/
 
 export const FACETS = ['food_type', 'payment_options', 'price_range', 'stars_count'];
@@ -23,7 +23,6 @@ const facetLabel = (facet)=>{
             return 'Other';
     }
 }
-
 
 /**
 *   Display the facets to filter resuts

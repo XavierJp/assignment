@@ -17,17 +17,16 @@ const clientParams = {
     facets: FACETS
 };
 
-let helper = algoliasearchHelper(client, indexName, clientParams);
+const helper = algoliasearchHelper(client, indexName, clientParams);
 
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition((position) => {
-        clientParams.aroundLatLng = `${position.coords.latitude},${position.coords.longitude}`;
-        helper = algoliasearchHelper(client, indexName, clientParams);
+        helper.setQueryParameter('aroundLatLng', `${position.coords.latitude},${position.coords.longitude}`)
     });
 }
 
 /**
-*   Manage search
+*   Manage search and instantiate algolia helper
 **/
 
 class Search extends Component {
@@ -73,6 +72,7 @@ class Search extends Component {
     }
 }
 
+/** empty container, displayed when no results **/
 const Empty = () => {
     return(
         <div id="no-results" className="italic">No results</div>

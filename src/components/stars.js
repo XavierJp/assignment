@@ -2,7 +2,7 @@ import React from 'react';
 import './stars.css';
 
 /**
-*   Display rating score
+*   Display stars score
 **/
 
 const starCount = [0, 1, 2, 3, 4];
