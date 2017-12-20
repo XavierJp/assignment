@@ -11,6 +11,7 @@ let restaurantInfo = [];
 
 let restaurantIndex = {};
 
+// load restaurant list
 const init = () => {
     console.log('*** Open restaurant list ***')
 
@@ -29,6 +30,7 @@ const init = () => {
     });
 }
 
+// merge with csv containing menu and food infos
 const merge = () => {
     console.log('*** Open restaurant infos and merge them with list ***')
 
@@ -57,6 +59,7 @@ const merge = () => {
     });
 }
 
+// Clean payment option
 const cleanPaymentOptions = () => {
     const replace = (o) => {
         if (['AMEX', 'Visa', 'Discover', 'MasterCard'].indexOf(o) === -1) {
@@ -72,6 +75,7 @@ const cleanPaymentOptions = () => {
 
 }
 
+// save on disk
 const write = () => {
     console.log('*** Write results back on disk ***')
 
