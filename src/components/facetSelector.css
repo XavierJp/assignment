@@ -1,6 +1,6 @@
 #facet-container {
     width:35%;
-    height:500px;
+    height:440px;
     overflow-y:scroll;
     overflow-wrap: break-word;
     overflow-x: hidden;
@@ -20,7 +20,7 @@
     cursor:pointer;
 }
 .facet-refined {
-    background-color: #458edc;
+    background-color: #2897C5;
     color:#fff;
 
 }

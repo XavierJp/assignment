@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './facetSelector.css';
+import Stars from './stars';
 
 
 /**
@@ -65,7 +66,7 @@ class FacetSelector extends Component {
 const FacetSubSelector = (props) => {
     return(
         <div>
-                <div className="facet-label bold font-dark-gray">{ facetLabel(props.facetType) }</div>
+            <div className="facet-label bold font-dark-gray">{ facetLabel(props.facetType) }</div>
             {
                 props.facetList.map((facet, index) => {
                     return <FacetItem
@@ -84,7 +85,12 @@ const FacetItem = (props) => {
         <div
             className={ (props.data.isRefined ? 'facet-refined font-white' : '')+' facet-item' }
             onClick={()=>props.onFacetSelected(props.data.name)}>
+            { props.facetType !== 'stars_count' &&
                 <span>{props.data.name}</span>
+            }
+            { props.facetType === 'stars_count' &&
+                <Stars score={props.data.name} />
+            }
                 <span
                     className={ (props.data.isRefined ? 'font-white' : '')+' float-right font-light-gray' }
                 >{props.data.count}</span>

@@ -9,7 +9,7 @@ const InputBar = (props) => {
                 ref={(input) => { this.textInput = input; }}
                 autoComplete="off"
                 id="search-box"
-                defaultValue="Search for restaurants by Name, Cuisine, Location"/>
+                placeholder="Search for restaurants by Name, Cuisine, Location"/>
         </div>
         )
 }

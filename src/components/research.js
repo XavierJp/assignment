@@ -29,11 +29,11 @@ class Search extends Component {
             this.setState({
                 facets:FACETS.map(el=>content.getFacetValues(el)),
                 res:content.hits && content.hits.length > 0,
-                apiResponse : content
+                apiResponse : content,
             });
         });
 
-        helper.search()
+        helper.search();
     }
 
     componentDidMount () {

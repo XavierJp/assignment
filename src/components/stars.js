@@ -9,7 +9,7 @@ const starCount = [0, 1, 2, 3, 4];
 
 const Stars = (props) => {
     return (
-        <div className="flex-columns">
+        <div className="flex-columns stars-container">
             {
                 starCount.map((elem, index) => {
                     return <Star key={index} value={index+1 <= Math.round(props.score)}/>

@@ -1,5 +1,15 @@
 #results-container {
     width:80%;
+    padding : 0px 20px;
+}
+
+#results-header {
+    height:20px;
+    margin: 20px 0px 0px 20px;
+}
+
+#results-perf {
+    font-size:0.8em;
 }
 
 .result-item {
@@ -7,14 +17,46 @@
 }
 
 .restaurant-picture {
-    width:120px;
-    height:120px;
-    background-color: #fefefe;
+    width:80px;
+    height:80px;
+    background-color: #B8E986;
     margin:10px;
     border:1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .restaurant-description {
-    width: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65px;
+}
+
+.restaurant-score {
+    color:#f5aa65;
+    margin-right:5px;
+}
+
+.restaurant-review {
+    margin-left: 10px;
+}
+
+#results-area{
+    height: 440px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+}
+
+#show-more {
+    margin: auto;
+    width: 150px;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
+    color: #b6b6b6;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor:pointer;
 }
