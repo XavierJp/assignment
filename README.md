@@ -31,7 +31,9 @@ The best type of metrics to include in a custom ranking depends on your business
 For more informations you can have a look at the Algolia documentation's definitions. If you do not understand a concept, or you want to discuss about the best custom ranking metrics to choose, do not hesitate to come back to me and eventually we can schedule a call.
 
 Here are the documentation links on these topics :
+
 Indexes & records : https://www.algolia.com/doc/guides/getting-started/what-is-algolia/?language=php#indices
+
 Custom ranking : https://www.algolia.com/doc/guides/ranking/custom-ranking/#custom-ranking-overview
 
 I hope that I answered your questions,
@@ -60,7 +62,9 @@ However if you use the clearing/delete feature quite often did you consider usin
 If you are interested in using the API, we can help you and I believe this will be even more efficient that the old dashboard.
 
 Here is a link to the Algolia documentation :
+
 clear index : https://www.algolia.com/doc/api-reference/api-methods/clear-index/
+
 delete index : https://www.algolia.com/doc/api-reference/api-methods/delete-index/
 
 I am optimistic that we can improve your index management experience,
@@ -87,14 +91,17 @@ I am Xavier from the Solutions Engineering team. I am glad to hear that you cons
 To answer your question, Algolia is doing everything it can to ensure that the integration is the best possible experience :
 
 As a new customer, you can schedule a demo where our engineers will mock up an integration to you website to help you visualize the way algolia could change your website's searching experience :
+
 https://www.algolia.com/schedule-demo
 
 If you want to get familiar with the Algolia concepts, you can suscribe to a 14-days trial which grants you full access to the search-API.
 
 To get started, the following documentation covers the key principles of Algolia:
+
 https://www.algolia.com/doc/guides/getting-started/what-is-algolia/
 
 And here is a step-by-step guide through the building of an Algolia-based search UI, using powerful and easy-to-setup libraries provided by Algolia:
+
 https://www.algolia.com/doc/guides/search-ui/building-a-search-ui/
 
 Do not hesitate to come back to me with your questions, and we can schedule a call to talk about Algolia's key concepts.
